@@ -12,7 +12,7 @@ namespace DbContext_Ass.DBContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.;Database=DbBOOKSTORE;Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=.\SQL2026;Database=DbBOOKSTORE;Trusted_Connection=True;TrustServerCertificate=True;");
         }
         public DbSet<BookInfoo> Books { get; set; }
         public DbSet<AuthorsInfo> AuthorsInfo { get; set; }
